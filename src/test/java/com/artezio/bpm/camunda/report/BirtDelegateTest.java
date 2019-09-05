@@ -47,8 +47,8 @@ public class BirtDelegateTest {
         ProcessDefinition processDefinition = mock(ProcessDefinition.class);
         ArgumentCaptor<FileValue> fileValueCaptor = ArgumentCaptor.forClass(FileValue.class);
 
-        when(execution.getVariable("reportTemplateName")).thenReturn(REPORT_TEMPLATE_NAME);
-        when(execution.getVariable("reportParams")).thenReturn(reportParams);
+        when(execution.getVariable("template")).thenReturn(REPORT_TEMPLATE_NAME);
+        when(execution.getVariable("params")).thenReturn(reportParams);
         when(execution.getVariable("outputFormat")).thenReturn("xlsx");
         when(execution.getProcessDefinitionId()).thenReturn(processDefinitionId);
         when(repositoryService.getProcessDefinition(processDefinitionId)).thenReturn(processDefinition);
@@ -79,8 +79,8 @@ public class BirtDelegateTest {
         ProcessDefinition processDefinition = mock(ProcessDefinition.class);
         ArgumentCaptor<FileValue> fileValueCaptor = ArgumentCaptor.forClass(FileValue.class);
 
-        when(execution.getVariable("reportTemplateName")).thenReturn(REPORT_TEMPLATE_NAME);
-        when(execution.getVariable("reportParams")).thenReturn(reportParams);
+        when(execution.getVariable("template")).thenReturn(REPORT_TEMPLATE_NAME);
+        when(execution.getVariable("params")).thenReturn(reportParams);
         when(execution.getVariable("outputFormat")).thenReturn("xls");
         when(execution.getProcessDefinitionId()).thenReturn(processDefinitionId);
         when(repositoryService.getProcessDefinition(processDefinitionId)).thenReturn(processDefinition);
@@ -111,8 +111,8 @@ public class BirtDelegateTest {
         ProcessDefinition processDefinition = mock(ProcessDefinition.class);
         ArgumentCaptor<FileValue> fileValueCaptor = ArgumentCaptor.forClass(FileValue.class);
 
-        when(execution.getVariable("reportTemplateName")).thenReturn(REPORT_TEMPLATE_NAME);
-        when(execution.getVariable("reportParams")).thenReturn(reportParams);
+        when(execution.getVariable("template")).thenReturn(REPORT_TEMPLATE_NAME);
+        when(execution.getVariable("params")).thenReturn(reportParams);
         when(execution.getVariable("outputFormat")).thenReturn("docx");
         when(execution.getProcessDefinitionId()).thenReturn(processDefinitionId);
         when(repositoryService.getProcessDefinition(processDefinitionId)).thenReturn(processDefinition);

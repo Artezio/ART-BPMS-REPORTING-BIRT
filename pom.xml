@@ -12,6 +12,7 @@
     <properties>
         <camunda.version>7.10.0</camunda.version>
         <birt.version>4.8.0</birt.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -78,6 +79,7 @@
                 <configuration>
                     <source>8</source>
                     <target>8</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
         </plugins>
