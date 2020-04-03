@@ -2,17 +2,22 @@
 Art BPMS Reporting Birt is a module which allows creating reports from a Camunda process using eclipse birt emitter.
 
 ## Getting Started
-1. Clone this repository
-2. Go to the cloned repository folder and run `mvn install`
-3. Add the following dependency to your process application project's pom:
+1. Open your project's pom
+2. Add the reference to the artezio mvn repository:
+    ```xml
+    <repository>
+        <id>artezio</id>
+        <url>https://nexus.artezio.net/repository/maven-releases</url>
+    </repository>
     ```
+2. Add the dependency:
+    ```xml
     <dependency>
-        <groupId>com.artezio.bpm.camunda.report</groupId>
-        <artifactId>camunda-birt-report</artifactId>
-        <version>1.0</version>
+	    <groupId>com.artezio.bpm.camunda.report</groupId>
+	    <artifactId>camunda-birt-report</artifactId>
+	    <version>${birt-report.version}</version>
     </dependency>
-    ``` 
-4. Now `camunda-birt-report` is available to use.
+    ```
 
 ## Preparation To Design Report
 Birt uses report templates (files with `.rptdesign` extension) to generate reports. The section below describes preparing steps to design report templates:
